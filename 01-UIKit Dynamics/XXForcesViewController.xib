@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XXForcesViewController">
+            <connections>
+                <outlet property="dragonIV" destination="bsP-Ko-n8p" id="izb-yr-Sk6"/>
+                <outlet property="view" destination="uas-o1-R69" id="Kwk-2e-ixE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uas-o1-R69">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DF" translatesAutoresizingMaskIntoConstraints="NO" id="bsP-Ko-n8p">
+                    <rect key="frame" x="100" y="300" width="100" height="100"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="O6v-bK-ycX"/>
+                        <constraint firstAttribute="width" constant="100" id="Zm0-qO-QDr"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="sne-UJ-aqw" appends="YES" id="EYD-4q-4i2"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bsP-Ko-n8p" firstAttribute="top" secondItem="uas-o1-R69" secondAttribute="top" constant="300" id="6o2-ZF-Utg"/>
+                <constraint firstItem="bsP-Ko-n8p" firstAttribute="leading" secondItem="uas-o1-R69" secondAttribute="leading" constant="100" id="fOd-65-Dme"/>
+            </constraints>
+            <point key="canvasLocation" x="-194" y="-54"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="sne-UJ-aqw">
+            <connections>
+                <action selector="handlePanGesture:" destination="-1" id="Mmz-fz-e2Z"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="DF" width="100" height="102"/>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XXAttatchmentsViewController">
+            <connections>
+                <outlet property="dragonIV" destination="aKg-vW-wLh" id="p0K-sP-Rjz"/>
+                <outlet property="frogIV" destination="8YY-Lv-X8u" id="UzS-sI-Wou"/>
+                <outlet property="view" destination="2K6-Jn-FUs" id="Zdk-lx-Kct"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2K6-Jn-FUs">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Emp" translatesAutoresizingMaskIntoConstraints="NO" id="8YY-Lv-X8u">
+                    <rect key="frame" x="100" y="100" width="100" height="100"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Bs6-uv-HAg"/>
+                        <constraint firstAttribute="width" constant="100" id="NhB-Nj-Kmy"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="zsc-cP-mhk" appends="YES" id="bN3-9o-bXR"/>
+                    </connections>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DF" translatesAutoresizingMaskIntoConstraints="NO" id="aKg-vW-wLh">
+                    <rect key="frame" x="100" y="300" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Lol-xK-3Zi"/>
+                        <constraint firstAttribute="height" constant="100" id="kuf-f8-naR"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aKg-vW-wLh" firstAttribute="top" secondItem="8YY-Lv-X8u" secondAttribute="bottom" constant="100" id="Fy0-hE-T6Q"/>
+                <constraint firstItem="8YY-Lv-X8u" firstAttribute="top" secondItem="2K6-Jn-FUs" secondAttribute="top" constant="100" id="HBc-wu-Ct3"/>
+                <constraint firstItem="8YY-Lv-X8u" firstAttribute="leading" secondItem="2K6-Jn-FUs" secondAttribute="leading" constant="100" id="aov-is-HIp"/>
+                <constraint firstItem="aKg-vW-wLh" firstAttribute="leading" secondItem="2K6-Jn-FUs" secondAttribute="leading" constant="100" id="t7y-cJ-9at"/>
+            </constraints>
+            <point key="canvasLocation" x="34" y="352"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="zsc-cP-mhk">
+            <connections>
+                <action selector="handleAttachmentGesture:" destination="-1" id="pys-zt-sOs"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="DF" width="100" height="102"/>
+        <image name="Emp" width="200" height="200"/>
+    </resources>
+</document>
